@@ -1,7 +1,7 @@
 # from openai import OpenAI
 import streamlit as st
 
-st.title("☃️ Frosty")
+st.title("☃️ GAME NA CHATBOT")
 
 # Initialize the chat messages history
 if "messages" not in st.session_state.keys():
