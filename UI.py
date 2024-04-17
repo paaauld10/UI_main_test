@@ -3,6 +3,7 @@ import streamlit as st
 
 st.title("☃️ GAME NA CHATBOT")
 st.button("CLICK MO KO DITO PRE")
+st.file_uploader("DITO KA UPLOAD MADAM")
 
 # Initialize the chat messages history
 if "messages" not in st.session_state.keys():
