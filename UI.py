@@ -132,10 +132,12 @@ if "messages" not in st.session_state.keys():
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-# # display the existing chat messages
-# for message in st.session_state.messages:
-#     with st.chat_message(message["role"]):
-#         st.write(message["content"])
+
+
+# display the existing chat messages
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.write(message["content"])
 
 
 # # Initialize the chat messages history
