@@ -26,7 +26,7 @@ gradient_text_html = """
     font-size: 3em;
 }
 </style>
-<div class="gradient-text">snowChat</div>
+<div class="gradient-text">Doraemon</div>
 """
 
 st.markdown(gradient_text_html, unsafe_allow_html=True)
