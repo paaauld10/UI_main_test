@@ -134,6 +134,7 @@ if "model" not in st.session_state:
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
 
+############ ERROR TO
 # for message in st.session_state.messages:
 #     message_func(
 #         message["content"],
