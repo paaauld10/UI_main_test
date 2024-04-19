@@ -30,7 +30,7 @@ gradient_text_html = """
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);  /* Subtle text shadow */
 }
 </style>
-<div class="gradient-text">snowChat</div>
+<div class="gradient-text">Doraemon</div>
 """
 
 
