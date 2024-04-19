@@ -85,7 +85,7 @@ st.markdown(
 )
 
 model = st.selectbox(
-    "Select a Model",  # Label for the selectbox
+    "Select an AI Assistant",  # Label for the selectbox
     options=["mistral-large", "reka-flash", "mixtral-8x7b", "lama-2-70b-chat"],
     index=0,  # Default option index
 )
