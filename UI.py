@@ -54,15 +54,27 @@ st.markdown(
         font-family: 'Arial', sans-serif;  /* Change font style */
         font-size: 1.2em;  /* Adjust font size */
         font-weight: bold;  /* Make the label bold */
-        color: #0b8a93;  /* Set text color */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Add shadow to the label */
+        color: #4B0082;  /* Set text color to indigo/violet */
     }
 
     /* Customize the selectbox */
     div[data-baseweb="select"] {
-        background-color: #f0f0f0;  /* Light gray background */
+        background-color: #8A2BE2;  /* Violet-blue background color */
+        color: white;  /* Text color */
         border-radius: 8px;  /* Rounded corners */
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);  /* Subtle box shadow */
+        padding: 10px;  /* Padding around the content */
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);  /* Add shadow to the selectbox */
+    }
+
+    /* Customize the dropdown options */
+    div[data-baseweb="menu"] {
+        background-color: #8A2BE2;  /* Same violet-blue background */
+        color: white;  /* Text color */
+    }
+
+    /* Customize the dropdown option hover effect */
+    div[data-baseweb="menu"] :hover {
+        background-color: #7B1FA2;  /* Darker shade for hover effect */
     }
     </style>
     """,
@@ -70,10 +82,11 @@ st.markdown(
 )
 
 model = st.selectbox(
-    "Choose Your Preferred Model",  # Updated label
+    "Select a Model",  # Label for the selectbox
     options=["mistral-large", "reka-flash", "mixtral-8x7b", "lama-2-70b-chat"],
     index=0,  # Default option index
 )
+
 st.session_state["model"] = model
 
 
