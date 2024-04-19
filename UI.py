@@ -120,6 +120,16 @@ INITIAL_MESSAGE = [
     },
 ]
 
+# Initialize the chat messages history
+if "messages" not in st.session_state.keys():
+    st.session_state["messages"] = INITIAL_MESSAGE
+
+if "history" not in st.session_state:
+    st.session_state["history"] = []
+
+if "model" not in st.session_state:
+    st.session_state["model"] = model
+
 
 
 
