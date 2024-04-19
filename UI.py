@@ -10,9 +10,9 @@ import streamlit as st
 # from utils.snowchat_ui import StreamlitUICallbackHandler, message_func
 # from utils.snowddl import Snowddl
 
-warnings.filterwarnings("ignore")
-chat_history = []
-snow_ddl = Snowddl()
+# warnings.filterwarnings("ignore")
+# chat_history = []
+# snow_ddl = Snowddl()
 
 gradient_text_html = """
 <style>
