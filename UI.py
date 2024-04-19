@@ -39,11 +39,17 @@ st.markdown(gradient_text_html, unsafe_allow_html=True)
 
 st.caption("Hello ako si Doramon at may mahiwagang batuta")
 
-model = st.radio(
-    "",
+# model = st.radio(
+#     "",
+#     options=["mistral-large", "reka-flash", "mixtral-8x7b", "lama-2-70b-chat"],
+#     index=0,
+#     horizontal=True,
+# )
+
+model = st.selectbox(
+    "Select a Model",  # Label for the selectbox
     options=["mistral-large", "reka-flash", "mixtral-8x7b", "lama-2-70b-chat"],
-    index=0,
-    horizontal=True,
+    index=0,  # Default option index (can be changed as per your preference)
 )
 
 st.session_state["model"] = model
