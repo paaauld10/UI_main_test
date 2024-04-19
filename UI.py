@@ -16,19 +16,23 @@ import streamlit as st
 
 gradient_text_html = """
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 .gradient-text {
-    font-weight: bold;
-    background: -webkit-linear-gradient(left, blue, purple);
-    background: linear-gradient(to right, blue, purple);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background: -webkit-linear-gradient(left, #0b8a93, #2ed47a);
+    background: linear-gradient(to right, #0b8a93, #2ed47a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
-    font-size: 4em;  /* Increased font size for more emphasis */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Adding a subtle shadow effect */
+    font-size: 3em;  /* Choose a suitable size for your application */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);  /* Subtle text shadow */
 }
 </style>
 <div class="gradient-text">snowChat</div>
 """
+
 
 st.markdown(gradient_text_html, unsafe_allow_html=True)
 
