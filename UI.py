@@ -21,8 +21,8 @@ gradient_text_html = """
 .gradient-text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    background: -webkit-linear-gradient(left, #0b8a93, #2ed47a);
-    background: linear-gradient(to right, #0b8a93, #2ed47a);
+    background: -webkit-linear-gradient(left, violet, blue);
+    background: linear-gradient(to right, violet, blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
