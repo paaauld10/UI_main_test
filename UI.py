@@ -122,11 +122,25 @@ INITIAL_MESSAGE = [
 
 # # Initialize the chat messages history
 # if "messages" not in st.session_state.keys():
-#     st.session_state.messages = [{"role": "assistant", "content": "Hey Doraemon to the rescue!!!! "}]
+#     st.session_state.messages = [{"role": "assistant", "content": "Hey there Doraemon to the rescue!!!! "}]
 
 # Initialize the chat messages history
 if "messages" not in st.session_state.keys():
-    st.session_state["messages"] = INITIAL_MESSAGE
+    st.session_state.messages = [{"role": "assistant", "content": "Hey there Doraemon to the rescue!!!! "}]
+
+# Prompt for user input and save
+if prompt := st.chat_input():
+    st.session_state.messages.append({"role": "user", "content": prompt})
+
+# # display the existing chat messages
+# for message in st.session_state.messages:
+#     with st.chat_message(message["role"]):
+#         st.write(message["content"])
+
+
+# # Initialize the chat messages history
+# if "messages" not in st.session_state.keys():
+#     st.session_state["messages"] = INITIAL_MESSAGE
 
 # if "history" not in st.session_state:
 #     st.session_state["history"] = []
