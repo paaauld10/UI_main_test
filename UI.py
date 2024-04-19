@@ -18,15 +18,16 @@ gradient_text_html = """
 <style>
 .gradient-text {
     font-weight: bold;
-    background: -webkit-linear-gradient(left, violet, blue);
-    background: linear-gradient(to right, violet, blue);
+    background: -webkit-linear-gradient(left, blue, purple);
+    background: linear-gradient(to right, blue, purple);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
-    font-size: 3em;
+    font-size: 4em;  /* Increased font size for more emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Adding a subtle shadow effect */
 }
 </style>
-<div class="gradient-text">Doraemon</div>
+<div class="gradient-text">snowChat</div>
 """
 
 st.markdown(gradient_text_html, unsafe_allow_html=True)
