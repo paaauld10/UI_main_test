@@ -144,6 +144,10 @@ if prompt := st.chat_input():
 #     )
 
 
+callback_handler = StreamlitUICallbackHandler(model)
+
+chain = load_chain(st.session_state["model"], callback_handler)
+
 
 
 
