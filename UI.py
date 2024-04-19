@@ -28,7 +28,7 @@ gradient_text_html = """
     display: inline;
     font-size: 3em;  /* Choose a suitable size for your application */
     /* Make the text shadow more obvious */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 </style>
 <div class="gradient-text">Doraemon</div>
