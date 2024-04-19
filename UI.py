@@ -112,13 +112,13 @@ if st.session_state["rate-limit"]:
 if st.session_state["model"] == "Mixtral 8x7B":
     st.warning("This is highly rate-limited. Please use it sparingly", icon="⚠️")
 
-INITIAL_MESSAGE = [
-    {"role": "user", "content": "Hi!"},
-    {
-        "role": "assistant",
-        "content": "Hey there, I'm Chatty McQueryFace, your SQL-speaking sidekick, ready to chat up Snowflake and fetch answers faster than a snowball fight in summer! ❄️🔍",
-    },
-]
+# INITIAL_MESSAGE = [
+#     {"role": "user", "content": "Hi!"},
+#     {
+#         "role": "assistant",
+#         "content": "Hey there, I'm Chatty McQueryFace, your SQL-speaking sidekick, ready to chat up Snowflake and fetch answers faster than a snowball fight in summer! ❄️🔍",
+#     },
+# ]
 
 # # Initialize the chat messages history
 # if "messages" not in st.session_state.keys():
