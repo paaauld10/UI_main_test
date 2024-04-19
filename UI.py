@@ -19,7 +19,7 @@ gradient_text_html = """
 .gradient-text {
     font-weight: bold;
     background: -webkit-linear-gradient(left, violet, blue);
-    background: linear-gradient(to right, red, orange);
+    background: linear-gradient(to right, violet, blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
