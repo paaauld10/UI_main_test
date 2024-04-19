@@ -120,13 +120,13 @@ INITIAL_MESSAGE = [
     },
 ]
 
-# Initialize the chat messages history
-if "messages" not in st.session_state.keys():
-    st.session_state.messages = [{"role": "assistant", "content": "Hey Doraemon to the rescue!!!! "}]
-
 # # Initialize the chat messages history
 # if "messages" not in st.session_state.keys():
-#     st.session_state["messages"] = INITIAL_MESSAGE
+#     st.session_state.messages = [{"role": "assistant", "content": "Hey Doraemon to the rescue!!!! "}]
+
+# Initialize the chat messages history
+if "messages" not in st.session_state.keys():
+    st.session_state["messages"] = INITIAL_MESSAGE
 
 # if "history" not in st.session_state:
 #     st.session_state["history"] = []
