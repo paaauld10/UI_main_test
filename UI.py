@@ -130,6 +130,19 @@ if "history" not in st.session_state:
 if "model" not in st.session_state:
     st.session_state["model"] = model
 
+# Prompt for user input and save
+if prompt := st.chat_input():
+    st.session_state.messages.append({"role": "user", "content": prompt})
+
+for message in st.session_state.messages:
+    message_func(
+        message["content"],
+        True if message["role"] == "user" else False,
+        True if message["role"] == "data" else False,
+        model,
+    )
+
+
 
 
 
