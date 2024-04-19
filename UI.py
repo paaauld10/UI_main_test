@@ -4,11 +4,11 @@ import warnings
 import streamlit as st
 # from snowflake.snowpark.exceptions import SnowparkSQLException
 
-from chain import load_chain
+# from chain import load_chain
 
 # from utils.snow_connect import SnowflakeConnection
-from utils.snowchat_ui import StreamlitUICallbackHandler, message_func
-from utils.snowddl import Snowddl
+# from utils.snowchat_ui import StreamlitUICallbackHandler, message_func
+# from utils.snowddl import Snowddl
 
 warnings.filterwarnings("ignore")
 chat_history = []
