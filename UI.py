@@ -134,9 +134,9 @@ if "messages" not in st.session_state.keys():
 # if "model" not in st.session_state:
 #     st.session_state["model"] = model
 
-# # Prompt for user input and save
-# if prompt := st.chat_input():
-#     st.session_state.messages.append({"role": "user", "content": prompt})
+# Prompt for user input and save
+if prompt := st.chat_input():
+    st.session_state.messages.append({"role": "user", "content": prompt})
 
 ############ ERROR TO
 # for message in st.session_state.messages:
