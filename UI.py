@@ -89,49 +89,7 @@ model = st.selectbox(
     options=["mistral-large", "reka-flash", "mixtral-8x7b", "lama-2-70b-chat"],
     index=0,  # Default option index
 )
-st.markdown(
-    """
-    <style>
-    /* Customize the selectbox label */
-    label[for="Select a Model"] {
-        font-family: 'Arial', sans-serif;  /* Change font style */
-        font-size: 1.2em;  /* Adjust font size */
-        font-weight: bold;  /* Make the label bold */
-        color: #4B0082;  /* Set text color to indigo/violet */
-    }
 
-    /* Customize the selectbox */
-    div[data-baseweb="select"] {
-        /* Apply violet to blue gradient background */
-        background: -webkit-linear-gradient(left, violet, blue);
-        background: linear-gradient(to right, violet, blue);
-        color: white;  /* Text color */
-        border-radius: 8px;  /* Rounded corners */
-        padding: 10px;  /* Padding around the content */
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);  /* Add shadow to the selectbox */
-    }
-
-    /* Customize the dropdown options */
-    div[data-baseweb="menu"] {
-        background: -webkit-linear-gradient(left, violet, blue);
-        background: linear-gradient(to right, violet, blue);
-        color: white;  /* Text color */
-    }
-
-    /* Customize the dropdown option hover effect */
-    div[data-baseweb="menu"] :hover {
-        background-color: #7B1FA2;  /* Darker shade for hover effect */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-model = st.selectbox(
-    "Select a Model",  # Label for the selectbox
-    options=["mistral-large", "reka-flash", "mixtral-8x7b", "lama-2-70b-chat"],
-    index=0,  # Default option index
-)
 
 st.session_state["model"] = model
 
