@@ -120,11 +120,7 @@ INITIAL_MESSAGE = [
     },
 ]
 
-with open("ui/sidebar.md", "r") as sidebar_file:
-    sidebar_content = sidebar_file.read()
 
-with open("ui/styles.md", "r") as styles_file:
-    styles_content = styles_file.read()
 
 st.sidebar.markdown(sidebar_content)
 
