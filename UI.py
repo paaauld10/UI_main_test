@@ -46,12 +46,34 @@ st.caption("Hello ako si Doramon at may mahiwagang batuta")
 #     horizontal=True,
 # )
 
-model = st.selectbox(
-    "Select a Model",  # Label for the selectbox
-    options=["mistral-large", "reka-flash", "mixtral-8x7b", "lama-2-70b-chat"],
-    index=0,  # Default option index (can be changed as per your preference)
+st.markdown(
+    """
+    <style>
+    /* Customize the selectbox label */
+    label[for="Select a Model"] {
+        font-family: 'Arial', sans-serif;  /* Change font style */
+        font-size: 1.2em;  /* Adjust font size */
+        font-weight: bold;  /* Make the label bold */
+        color: #0b8a93;  /* Set text color */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Add shadow to the label */
+    }
+
+    /* Customize the selectbox */
+    div[data-baseweb="select"] {
+        background-color: #f0f0f0;  /* Light gray background */
+        border-radius: 8px;  /* Rounded corners */
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);  /* Subtle box shadow */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
 
+model = st.selectbox(
+    "Choose Your Preferred Model",  # Updated label
+    options=["mistral-large", "reka-flash", "mixtral-8x7b", "lama-2-70b-chat"],
+    index=0,  # Default option index
+)
 st.session_state["model"] = model
 
 
