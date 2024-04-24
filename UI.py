@@ -37,7 +37,7 @@ gradient_text_html = """
 
 st.markdown(gradient_text_html, unsafe_allow_html=True)
 
-st.caption("Hello ako si Doramon at may mahiwagang batuta")
+st.caption("Hello ako si Doreamon at may mahiwagang bahay")
 
 # model = st.radio(
 #     "",
